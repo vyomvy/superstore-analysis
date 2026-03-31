@@ -2,72 +2,138 @@
 <html>
 <head>
   <title>Superstore Analysis</title>
+
   <style>
     body {
-      font-family: Arial;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background: #0f172a;
       color: white;
+      scroll-behavior: smooth;
     }
-    header {
-      background: linear-gradient(90deg, #1e293b, #0ea5e9);
-      padding: 40px;
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #020617;
+      padding: 15px;
       text-align: center;
-      font-size: 32px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #38bdf8;
+      margin: 0 15px;
+      text-decoration: none;
       font-weight: bold;
     }
+
+    header {
+      background: linear-gradient(90deg, #0ea5e9, #1e293b);
+      padding: 60px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
     section {
-      padding: 40px;
+      padding: 60px 20px;
       max-width: 900px;
       margin: auto;
     }
+
     .card {
       background: #1e293b;
       padding: 25px;
-      margin: 20px 0;
+      margin: 25px 0;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      transition: 0.3s;
     }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
     .highlight {
       color: #38bdf8;
       font-weight: bold;
     }
+
     img {
       width: 100%;
       border-radius: 10px;
-      margin-top: 10px;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
+<!-- 🔗 NAVBAR -->
+<nav>
+  <a href="#objective">Objective</a>
+  <a href="#insights">Insights</a>
+  <a href="#snapshots">Snapshots</a>
+  <a href="#recommendations">Recommendations</a>
+</nav>
+
+<!-- 🔥 HEADER -->
 <header>
-  🛒 Superstore Sales Analysis
+  🛒 Superstore Sales Analysis  
+  <div style="font-size:18px; margin-top:10px;">
+    Data-Driven Business Insights by Vyom
+  </div>
 </header>
 
-<section>
-
+<!-- 📌 OBJECTIVE -->
+<section id="objective">
   <div class="card">
     <h2>📌 Objective</h2>
-    <p>Analyze supermarket sales data to identify <span class="highlight">profitability gaps</span> and uncover <span class="highlight">high-performing markets</span>.</p>
+    <p>
+      Analyze supermarket sales data to uncover <span class="highlight">profitability gaps</span> 
+      and identify <span class="highlight">high-performing markets</span>.
+    </p>
   </div>
 
   <div class="card">
     <h2>🧠 Business Problem</h2>
-    <p>High sales do not always mean high profit. This project identifies cities that generate revenue but reduce overall business value.</p>
+    <p>
+      High sales do not always translate into high profit. This project highlights 
+      cities that generate revenue but reduce overall business value.
+    </p>
   </div>
+</section>
 
+<!-- 📊 INSIGHTS -->
+<section id="insights">
   <div class="card">
     <h2>📊 Key Insights</h2>
-    <p><span class="highlight">Loss Cities:</span> Philadelphia, Houston, Chicago</p>
-    <p><span class="highlight">Top Profit Cities:</span> New York City, San Francisco</p>
-    <p><span class="highlight">Growth Potential:</span> Springfield, Los Angeles</p>
-  </div>
 
+    <p><span class="highlight">Loss-Making Cities:</span> Philadelphia, Houston, Chicago</p>
+    <p>→ High sales but negative profitability</p>
+
+    <p><span class="highlight">Top Profit Cities:</span> New York City, San Francisco</p>
+    <p>→ Strong balance of revenue and profit</p>
+
+    <p><span class="highlight">Growth Potential:</span> Springfield, Los Angeles</p>
+    <p>→ Opportunity for expansion</p>
+
+  </div>
+</section>
+
+<!-- 📸 SNAPSHOTS -->
+<section id="snapshots">
   <div class="card">
     <h2>📸 Analysis Snapshots</h2>
-    
+
     <h3>Profit Analysis</h3>
     <img src="final%20table.png">
 
@@ -77,23 +143,33 @@
     <h3>Most Active Cities</h3>
     <img src="most%20active%20cities.png">
   </div>
+</section>
 
+<!-- 🚀 RECOMMENDATIONS -->
+<section id="recommendations">
   <div class="card">
     <h2>🚀 Recommendations</h2>
     <ul>
-      <li>Reduce discounting in loss-making cities</li>
-      <li>Invest more in high-profit regions</li>
-      <li>Optimize pricing strategy</li>
+      <li>Reduce aggressive discounting in loss-making cities</li>
+      <li>Focus on high-profit regions</li>
+      <li>Improve pricing strategies</li>
       <li>Expand in growth markets</li>
     </ul>
   </div>
+</section>
 
+<!-- 🛠️ TOOLS -->
+<section>
   <div class="card">
     <h2>🛠️ Tools Used</h2>
     <p>Python, Pandas, Google Colab</p>
   </div>
-
 </section>
+
+<!-- 👤 FOOTER -->
+<footer>
+  🚀 Built by Vyom | Aspiring Data Analyst  
+</footer>
 
 </body>
 </html>
