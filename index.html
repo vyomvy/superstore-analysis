@@ -10,23 +10,32 @@
       color: white;
     }
     header {
-      background: #1e293b;
-      padding: 30px;
+      background: linear-gradient(90deg, #1e293b, #0ea5e9);
+      padding: 40px;
       text-align: center;
-      font-size: 30px;
+      font-size: 32px;
       font-weight: bold;
     }
     section {
       padding: 40px;
+      max-width: 900px;
+      margin: auto;
     }
     .card {
       background: #1e293b;
-      padding: 20px;
+      padding: 25px;
       margin: 20px 0;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
     .highlight {
       color: #38bdf8;
+      font-weight: bold;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -41,19 +50,47 @@
 
   <div class="card">
     <h2>📌 Objective</h2>
-    <p>Analyze profitability across cities to identify loss-making and high-performing markets.</p>
+    <p>Analyze supermarket sales data to identify <span class="highlight">profitability gaps</span> and uncover <span class="highlight">high-performing markets</span>.</p>
+  </div>
+
+  <div class="card">
+    <h2>🧠 Business Problem</h2>
+    <p>High sales do not always mean high profit. This project identifies cities that generate revenue but reduce overall business value.</p>
   </div>
 
   <div class="card">
     <h2>📊 Key Insights</h2>
     <p><span class="highlight">Loss Cities:</span> Philadelphia, Houston, Chicago</p>
-    <p><span class="highlight">Top Cities:</span> New York City, San Francisco</p>
-    <p><span class="highlight">Growth:</span> Springfield, Los Angeles</p>
+    <p><span class="highlight">Top Profit Cities:</span> New York City, San Francisco</p>
+    <p><span class="highlight">Growth Potential:</span> Springfield, Los Angeles</p>
+  </div>
+
+  <div class="card">
+    <h2>📸 Analysis Snapshots</h2>
+    
+    <h3>Profit Analysis</h3>
+    <img src="final%20table.png">
+
+    <h3>Loss Making Products</h3>
+    <img src="loss%20making%20product.png">
+
+    <h3>Most Active Cities</h3>
+    <img src="most%20active%20cities.png">
   </div>
 
   <div class="card">
     <h2>🚀 Recommendations</h2>
-    <p>Reduce discounts, focus on profitable regions, optimize pricing strategy.</p>
+    <ul>
+      <li>Reduce discounting in loss-making cities</li>
+      <li>Invest more in high-profit regions</li>
+      <li>Optimize pricing strategy</li>
+      <li>Expand in growth markets</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🛠️ Tools Used</h2>
+    <p>Python, Pandas, Google Colab</p>
   </div>
 
 </section>
