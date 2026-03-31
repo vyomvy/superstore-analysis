@@ -102,7 +102,7 @@ The business shows a **clear imbalance between volume and profitability**.
 ---
 
 ### 🔹 Most Active Cities
-<img src="most%20active%20cities.png" width="700"/>
+<img src="most%20active%20cities.png" width="400"/>
 
 ---
 
