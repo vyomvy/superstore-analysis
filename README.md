@@ -85,29 +85,6 @@ The business shows a **clear imbalance between volume and profitability**.
 - Optimize pricing strategy  
 - Expand operations in growth-potential regions  
 
----
-
-## 📸 Project Snapshots
-
-## 📸 Project Snapshots
-
-### 🔹 Overall Profit Analysis
-<img src="final%20table.png" width="700"/>
-
----
-
-### 🔹 Loss Making Products
-<img src="loss%20making%20product.png" width="700"/>
-
----
-
-### 🔹 Most Active Cities
-<img src="most%20active%20cities.png" width="400"/>
-
----
-
-## 💼 Why This Project Matters
-
 This project demonstrates:
 - Real-world business thinking  
 - Data-driven decision making  
